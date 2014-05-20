@@ -1,0 +1,33 @@
+set number
+set backspace=indent,eol,start
+set showcmd
+set showmode
+set laststatus=2
+set statusline=%f:%l:%c%m
+
+set noswapfile
+set nobackup
+set splitright
+set splitbelow
+set encoding=utf-8
+set autowrite
+set autoread
+set ignorecase
+set smartcase
+" set list
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+" disable auto commenting on next line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/log/*,*/source_maps/*
+
+set suffixesadd+=.js,.js.coffee,.coffee
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set smarttab
+set expandtab
+
+let g:ctrlp_show_hidden=1
