@@ -1,1 +1,2 @@
-command Subl execute "!subl %"
+command! Subl execute "!subl %"
+command! Ctags execute "!ctags -R"
