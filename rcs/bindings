@@ -7,25 +7,30 @@ nmap s <Plug>(easymotion-s)
 " map <Leader>j <Plug>(easymotion-j)
 " map <Leader>k <Plug>(easymotion-k)
 
-" easier splits movement
+nnoremap <Leader>n :Explore<CR>
+nnoremap <Leader>t :tabnew<CR>
+nnoremap <Leader>p arequire 'pry'; binding.pry #$<ESC>
+inoremap <Leader>p require 'pry'; binding.pry #$
+nnoremap <silent> <leader>b :CtrlPBuffer<cr>
+
+" leader mappings for common split creation/nav
+nnoremap <Leader>v :vnew<cr>
+nnoremap <Leader>h :new<cr>
+nnoremap <Leader>sv :vsp<cr>
+nnoremap <Leader>sh :sp<cr>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-nnoremap <Leader>n :Explore<CR>
-nnoremap <Leader>t :tabnew<CR>
-nnoremap <Leader>p arequire 'pry'; binding.pry<ESC>
-inoremap <Leader>p require 'pry'; binding.pry
-nnoremap <silent> <leader>b :CtrlPBuffer<cr>
-nnoremap <Leader>v :vnew<cr>
-nnoremap <Leader>h :new<cr>
-nnoremap <Leader>sv :vsp<cr>
-nnoremap <Leader>sh :sp<cr>
+" quick tab navigation
 nnoremap <Leader>1 1gt
 nnoremap <Leader>2 2gt
 nnoremap <Leader>3 3gt
 nnoremap <Leader>4 4gt
+
+" leader mapping for clearing search because highlighting is ugly
+nnoremap <Leader>c :nohl<return>
 
 " quick editing/sourcing of vim rc files
 nnoremap <Leader>ev :vsp ~/.vim/rcs/<cr>

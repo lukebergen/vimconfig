@@ -1,2 +1,3 @@
 command! Subl execute "!subl %"
 command! Ctags execute "!ctags -R"
+command! Clear execute "tabnew | tabonly"
