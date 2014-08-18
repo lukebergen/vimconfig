@@ -29,6 +29,9 @@ nnoremap <Leader>2 2gt
 nnoremap <Leader>3 3gt
 nnoremap <Leader>4 4gt
 
+" remap <Leader>r. I like running rake in another iterm window and would rather use r for redraw! since I habitually cmd+k and sometimes mistakenly do so in vim
+nnoremap <Leader>r :redraw!<CR>
+
 " leader mapping for clearing search because highlighting is ugly
 nnoremap <Leader>c :nohl<return>
 
