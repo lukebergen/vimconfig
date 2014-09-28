@@ -1,4 +1,4 @@
-set number
+set relativenumber
 set backspace=indent,eol,start
 set showcmd
 set showmode

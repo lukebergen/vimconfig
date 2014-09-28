@@ -1,3 +1,13 @@
 command! Subl execute "!subl %"
 command! Ctags execute "!ctags -R"
 command! Clear execute "tabnew | tabonly"
+
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <Leader>l :call NumberToggle()<cr>
